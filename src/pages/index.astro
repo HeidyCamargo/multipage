@@ -1,9 +1,19 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import { Icon } from 'astro-icon/components';
 ---
 
 <Layout title="Welcome to Astro.">
-	
+	<div class="my-custom-class">Lorem ipsum dolor sit amet.</div>
+    <span class="font-myfont bg-green-400">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus esse unde nobis commodi, est nemo modi cupiditate.</span>
+
+    <Icon name="mdi:cloud-upload-outline" size="56" class="text-blue-600"/>
+    <Icon name="unjs:undocs" size="100" />
+
 </Layout>
+<style>
+    .my-custom-class{
+        @apply bg-red-600 text-white text-2xl
+    }
+</style>
 
